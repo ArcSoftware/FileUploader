@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- this "enctype" is used when you have multi-part file upload -->
+<form action="/upload" enctype="multipart/form-data" method="post">
+    <input type="file" name="file"/>
+    <select name="length">
+        <option value=2000>2 seconds</option>
+        <option value=5000>5 seconds</option>
+        <option selected value=10000>10 seconds</option>
+        <option value=15000>15 seconds</option>
+        <option value=60000>1 minute</option>
+    </select>
+    <button type="submit">Upload</button>
+</form>
+<div id="fileList"></div>
+<script src="jquery-3.2.1.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
